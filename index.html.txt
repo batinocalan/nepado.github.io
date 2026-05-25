@@ -11,7 +11,7 @@
 
     <header class="main-header">
         <div class="logo-area">
-            <img src="assets/logos/g_markt_logo.png" alt="G MARKT Logo" class="logo">
+            <i class="fas fa-fire" style="font-size: 2.5rem; color: var(--main-accent);"></i>
             <span class="slogan">- İLELEBET CUMHURİYET -</span>
         </div>
         <nav class="main-nav">
@@ -36,7 +36,7 @@
     </header>
 
     <main class="content-wrapper">
-        <section class="hero-banner" style="background-image: url('assets/banners/newyear_banner.png');">
+        <section class="hero-banner" style="background: linear-gradient(135deg, rgba(18,0,45,1) 0%, rgba(255,69,0,0.4) 100%);">
             <div class="banner-content">
                 <h1 class="banner-text">NICE SENELER DILER</h1>
                 <div class="banner-logo-g">G</div>
@@ -51,60 +51,4 @@
         <div class="bottom-grid">
             <section class="section-gundem">
                 <h3 class="section-title">GÜNDEM</h3>
-                <div class="gundem-list">
-                    <article class="gundem-item">
-                        <img src="assets/covers/news_icon_1.png" alt="Haber İkonu 1" class="news-icon">
-                        <div class="news-text">
-                            <p>27 METASI ÇÜRÜDÜ !</p>
-                            <p>PEKİ SIRADAKİ NE ?</p>
-                        </div>
-                    </article>
-                    <article class="gundem-item">
-                        <img src="assets/covers/news_icon_2.png" alt="Haber İkonu 2" class="news-icon">
-                        <div class="news-text">
-                            <p>İŞTE VALORANT SUPER</p>
-                            <p>LEAGUE SONUÇLARI !</p>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <section class="section-indirimler">
-                <h3 class="section-title">İNDİRİMLER</h3>
-                <div class="game-cards-mini">
-                    <div class="game-card-mini">
-                        <img src="assets/covers/the_forest_cover.png" alt="The Forest Cover" class="game-cover">
-                        <div class="game-details">
-                            <h4 class="game-title-mini">THE FOREST</h4>
-                            <p class="game-price-mini">44.00 TL</p>
-                        </div>
-                    </div>
-                    <div class="game-card-mini">
-                        <img src="assets/covers/euro_truck_cover.png" alt="Euro Truck Cover" class="game-cover">
-                        <div class="game-details">
-                            <h4 class="game-title-mini">EURO TRUCK SIMULATOR 2</h4>
-                            <p class="game-price-mini">130.00 TL</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </main>
-
-    <footer class="main-footer">
-        <div class="footer-profile">
-            <img src="assets/avatars/batin_avatar_small.png" alt="Batın Öcalan Küçük Avatar" class="footer-avatar">
-        </div>
-        <div class="brand-logos">
-            <img src="assets/logos/migros_logo.png" alt="Migros Logo">
-            <img src="assets/logos/ulker_logo.png" alt="Ülker Logo">
-            <img src="assets/logos/pinar_logo.png" alt="Pınar Logo">
-            <img src="assets/logos/superfresh_logo.png" alt="SuperFresh Logo">
-            <img src="assets/logos/yemeksepeti_logo.png" alt="Yemeksepeti Logo">
-            <img src="assets/logos/papara_logo.png" alt="Papara Logo">
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+                <div class="gundem-list
