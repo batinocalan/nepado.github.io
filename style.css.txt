@@ -1,0 +1,317 @@
+/* --- GENEL AYARLAR --- */
+:root {
+    --bg-color: #12002d; /* Koyu Mor Arka Plan */
+    --main-accent: #ff4500; /* Ana Kırmızı/Turuncu Vurgu */
+    --text-color: #ffffff; /* Beyaz Metin */
+    --sub-text-color: #ffcccc; /* Açık Kırmızımsı Alt Metin */
+    --card-bg: rgba(255, 255, 255, 0.05); /* Şeffaf Kart Arka Planı */
+    --header-footer-bg: rgba(0, 0, 0, 0.8); /* Header/Footer Arka Planı */
+    --font-family: 'Poppins', sans-serif; /* Modern font (Google Fonts'tan eklenebilir) */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+.content-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 100px 20px 120px; /* Header ve footer için boşluk */
+}
+
+h3.section-title {
+    font-size: 1.5rem;
+    color: var(--main-accent);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* --- HEADER STİLLERİ --- */
+.main-header {
+    background-color: var(--header-footer-bg);
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 2px solid var(--main-accent);
+}
+
+.logo-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+}
+
+.slogan {
+    font-size: 0.7rem;
+    color: var(--main-accent);
+    margin-top: 5px;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+.main-nav a {
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.main-nav a.active, .main-nav a:hover {
+    color: var(--main-accent);
+    border-bottom: 2px solid var(--main-accent);
+}
+
+.user-area {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.user-icon {
+    font-size: 1.5rem;
+    color: var(--main-accent);
+    margin-bottom: 5px;
+}
+
+.user-name {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.user-wallet {
+    font-size: 0.8rem;
+    color: var(--sub-text-color);
+}
+
+.lang-setting {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    padding-left: 20px;
+}
+
+.lang-text {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.settings-icon {
+    color: var(--main-accent);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* --- FOOTER STİLLERİ --- */
+.main-footer {
+    background-color: var(--header-footer-bg);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    border-top: 2px solid var(--main-accent);
+}
+
+.footer-profile .footer-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--main-accent);
+}
+
+.brand-logos {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.brand-logos img {
+    height: 25px;
+    filter: grayscale(100%) opacity(0.7);
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.brand-logos img:hover {
+    filter: grayscale(0%) opacity(1);
+}
+
+/* --- ANA SAYFA (INDEX) STİLLERİ --- */
+.hero-banner {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid var(--main-accent);
+    margin-bottom: 40px;
+}
+
+.banner-content {
+    text-align: center;
+}
+
+.banner-text {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--sub-text-color);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.banner-logo-g {
+    font-size: 8rem;
+    font-weight: 900;
+    color: var(--main-accent);
+    margin: -20px 0;
+}
+
+.banner-subtext {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.banner-nav {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-btn:hover {
+    color: var(--main-accent);
+}
+
+.bottom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.gundem-list {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.gundem-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 15px;
+}
+
+.news-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.news-text p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.news-text p:first-child {
+    font-weight: 700;
+}
+
+.game-cards-mini {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.game-card-mini {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.game-card-mini:hover {
+    transform: translateY(-5px);
+}
+
+.game-cover {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.game-details {
+    padding: 15px;
+    text-align: center;
+}
+
+.game-title-mini {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.game-price-mini {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--main-accent);
+}
+
+/* Diğer sayfaların (Oyunlar, Profil, Yemek) kodlarını sığdırmak için 
+   buraya eklemeye devam edeceğiz. Ama şimdilik ana yapıyı oluşturalım. */
